@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Apaga la memoria swap, achicando su tamaño hasta cero, y moviendo en el proceso el contenido a la memoria principal
-# Para ello, debe haber espacio suficiente en la memoria principal.
+# Apaga la memoria swap, disminuyendo su tamaño hasta cero, y moviendo en el proceso el contenido a la memoria RAM
+# Para ello, debe haber espacio suficiente en la RAM.
 # luego de reducirla a cero (swapoff) la activa de nuevo a su valor total (de la partición swap) iniciando vacía.
 # con esto se optimiza el uso de memoria disminuyendo el intercambio swap-ram cuando el contenido de swap queda estancado
 # teniendo gran cantidad de RAM vacía.
@@ -24,7 +24,7 @@ free
 echo “Limpiando la caché~ “;
 sync ; echo 3 > /proc/sys/vm/drop_caches
 
-echo "Liberado de la memoria Swap (moviendo info a la memoria RAM)"
+echo "Liberado de la memoria Swap (moviendola a la memoria RAM)"
 sudo swapoff -a && echo "Activando la memoria Swap liberada" ; sudo swapon -a
 echo "Estado actual post liberación..."
 free
