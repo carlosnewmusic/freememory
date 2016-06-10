@@ -8,6 +8,7 @@
 # fuente http://geekland.eu/optimizar-el-uso-de-la-memoria-swap/
 # @copyleft (basado en la fuente mencionada)
 
+
 swapiness=`cat /proc/sys/vm/swappiness`
 echo "Info valor del swapiness:$swapiness"
 
