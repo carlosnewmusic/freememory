@@ -1,2 +1,4 @@
-# freememory.sh
-liberar RAM y SWAP en linux
+# freememory
+liberar RAM y SWAP en linux y servidores PHP
+
+...pronto mas info
