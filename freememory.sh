@@ -10,7 +10,7 @@ sudo su|su
 # @copyleft (basado en la fuente mencionada)
 
 
-swapiness=`cat /proc/sys/vm/swappiness`
+swapiness=(cat /proc/sys/vm/swappiness)
 echo "Info valor del swapiness:$swapiness"
 
 echo "Estado inicial de la memoria..."
