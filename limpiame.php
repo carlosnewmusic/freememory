@@ -18,4 +18,4 @@ Así ejecutaría el comando de limpieza cada 60 minutos.
 # Cabe añadir que este archivo php deberá tener permisos de ejecución y ser ejecutado por el usuario root.
 
 # Igualmente deberás tener instalado el Lenguaje php
-# (“sudo yum install php”)
+# (“sudo yum/apt-get/apt/aptitude install php”)
