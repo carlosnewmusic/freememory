@@ -7,10 +7,8 @@
 </a>
 
 Liberar RAM y SWAP en linux y servidores PHP
-
 ...pronto mas info
 
 Free up RAM and SWAP on linux and PHP servers
-
 ...soon more info
 
