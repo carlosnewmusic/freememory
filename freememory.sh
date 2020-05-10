@@ -30,12 +30,12 @@ echo "Liberado de la memoria Swap (moviendola a la memoria RAM)"
 swapoff -a && echo "Activando la memoria Swap liberada" ; sudo swapon -a
 echo "Estado actual post liberación..."
 free
-#configuracion para usar mas la swap 
-echo "Introduzca un valor para el uso de la swap(de 10 a 80): \t"
+#configuracion para usar mas la swap
+printf "%s\n" "Introduzca un valor para el uso de la swap(de 10 a 80): " 
 read swap
 until $swap<10&&$swap>80
   do
-    echo "el valor introducido no es valido, introduce de nuevo un valor entre 10 y 80 \t"
+    printf "%s\n" "El valor introducido no es valido, introduce de nuevo un valor entre 10 y 80: " 
     read swap
   done
 sysctl -w vm.swappiness=$swap
